@@ -1,0 +1,8 @@
+# To install the requirements, create a virtual environment
+virtualenv env
+
+# Activate this Env
+source env/bin/activate
+
+# Install these requirements so Flask can run
+pip install -r /path/to/requirements.txt
