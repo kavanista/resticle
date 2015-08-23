@@ -16,7 +16,6 @@ mysql.init_app(app)
 
 
 conn = mysql.connect()
-conn = mysql.connect()
 cursor = mysql.connect().cursor()
 
 cursor.execute("SELECT * from data")
