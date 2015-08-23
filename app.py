@@ -14,6 +14,14 @@ app.config['MYSQL_DATABASE_DB'] = config.db
 app.config['MYSQL_DATABASE_HOST'] = config.host
 mysql.init_app(app)
 
+
+conn = mysql.connect()
+conn = mysql.connect()
+cursor = mysql.connect().cursor()
+
+cursor.execute("SELECT * from data")
+data = cursor.fetchone()
+
 @app.route('/')
 def index():
     return "Hello world"
